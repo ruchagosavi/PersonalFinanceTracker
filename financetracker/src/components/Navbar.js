@@ -36,12 +36,16 @@ const Navbar = () => {
         {/* Collapsible content */}
         <div className="collapse navbar-collapse" id="navbarScroll">
           <ul className="navbar-nav ms-auto align-items-center">
+          <li className="nav-item me-5">
+              <NavLink className="nav-link fs-5" to="/gameforge">GameForge</NavLink>
+            </li>
             <li className="nav-item me-5">
               <NavLink className="nav-link fs-5" to="/about">About Us</NavLink>
             </li>
             <li className="nav-item me-5">
               <NavLink className="nav-link fs-5" to="/contact">Contact Us</NavLink>
             </li>
+
 
             <li className="nav-item dropdown me-5">
               <a
@@ -58,6 +62,7 @@ const Navbar = () => {
                 <li><NavLink className="dropdown-item fs-5" to="/analytics">Analytics</NavLink></li>
                 <li><NavLink className="dropdown-item fs-5" to="/expenses">View Expenses</NavLink></li>
                 <li><NavLink className="dropdown-item fs-5" to="/budget">Set Budget</NavLink></li>
+                
 {/* 
 
                 <li><hr className="dropdown-divider" /></li>
