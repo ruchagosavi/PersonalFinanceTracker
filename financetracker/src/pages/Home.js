@@ -99,15 +99,90 @@
 // export default Home;
 
 
+// import React from "react";
+// import image from '../pages/image.png';
+// const Home = () => {
+//   return (
+//     <div className="container mb-5">
+//       {/* Hero Section */}
+//       <div className="row align-items-center my-5">
+//         <div className="col-md-6">
+//           <h1 className="display-4 fw-bold">Take Control of Your Money</h1>
+//           <p className="lead mt-3">
+//             Welcome to your personal finance tracker! Budget smarter, track
+//             your spending, and grow your savings — all in one place.
+//           </p>
+//           <a href="/dashboard" className="btn btn-success btn-lg mt-4">
+//             Get Started
+//           </a>
+//         </div>
+//         <div className="col-md-6 text-center">
+//           <img
+//             src={image}
+//             alt="Finance Tracker"
+//             className="img-fluid"
+//             style={{ maxHeight: "400px" }}
+//           />
+//         </div>
+//       </div>
+
+//       {/* Features Section */}
+//       <div className="row text-center mt-5">
+//         <h2 className="mb-4">Features</h2>
+//         <div className="col-md-4 mb-4">
+//           <div className="p-4 shadow rounded bg-light h-100">
+//             <h4>Expense Tracking</h4>
+//             <p className="mt-3">
+//               Automatically categorize your transactions and monitor your daily
+//               spending habits.
+//             </p>
+//           </div>
+//         </div>
+//         <div className="col-md-4 mb-4">
+//           <div className="p-4 shadow rounded bg-light h-100">
+//             <h4>Budget Planning</h4>
+//             <p className="mt-3">
+//               Set custom budgets, goals, and limits to manage your finances
+//               better each month.
+//             </p>
+//           </div>
+//         </div>
+//         <div className="col-md-4 mb-4">
+//           <div className="p-4 shadow rounded bg-light h-100">
+//             <h4>Financial Insights</h4>
+//             <p className="mt-3">
+//               Get smart, AI-driven insights into your savings, investments, and
+//               future financial health.
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* CTA Section */}
+//       <div className="text-center my-5">
+//         <h3>Ready to level up your money game?</h3>
+//         <p className="mb-4">
+//           Sign in and start tracking your financial journey today!
+//         </p>
+//         <a href="/signup" className="btn btn-primary btn-lg">
+//           Create Account
+//         </a>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Home;
 import React from "react";
-import image from '../pages/image.png';
+import image from "../pages/image.png";
+
 const Home = () => {
   return (
     <div className="container mb-5">
       {/* Hero Section */}
       <div className="row align-items-center my-5">
         <div className="col-md-6">
-          <h1 className="display-4 fw-bold">Take Control of Your Money</h1>
+          <h1 className="display-4 fw-bold text-success">Take Control of Your Money</h1>
           <p className="lead mt-3">
             Welcome to your personal finance tracker! Budget smarter, track
             your spending, and grow your savings — all in one place.
@@ -128,11 +203,11 @@ const Home = () => {
 
       {/* Features Section */}
       <div className="row text-center mt-5">
-        <h2 className="mb-4">Features</h2>
+        <h2 className="mb-4 text-success">Features</h2>
         <div className="col-md-4 mb-4">
           <div className="p-4 shadow rounded bg-light h-100">
-            <h4>Expense Tracking</h4>
-            <p className="mt-3">
+            <h4 className="text-primary">Expense Tracking</h4>
+            <p className="mt-3 text-success">
               Automatically categorize your transactions and monitor your daily
               spending habits.
             </p>
@@ -140,8 +215,8 @@ const Home = () => {
         </div>
         <div className="col-md-4 mb-4">
           <div className="p-4 shadow rounded bg-light h-100">
-            <h4>Budget Planning</h4>
-            <p className="mt-3">
+            <h4 className="text-primary">Budget Planning</h4>
+            <p className="mt-3 text-success">
               Set custom budgets, goals, and limits to manage your finances
               better each month.
             </p>
@@ -149,8 +224,8 @@ const Home = () => {
         </div>
         <div className="col-md-4 mb-4">
           <div className="p-4 shadow rounded bg-light h-100">
-            <h4>Financial Insights</h4>
-            <p className="mt-3">
+            <h4 className="text-primary">Financial Insights</h4>
+            <p className="mt-3 text-success">
               Get smart, AI-driven insights into your savings, investments, and
               future financial health.
             </p>
@@ -160,11 +235,9 @@ const Home = () => {
 
       {/* CTA Section */}
       <div className="text-center my-5">
-        <h3>Ready to level up your money game?</h3>
-        <p className="mb-4">
-          Sign in and start tracking your financial journey today!
-        </p>
-        <a href="/signup" className="btn btn-primary btn-lg">
+        <h3 className="text-success">Ready to level up your money game?</h3>
+        <p className="mb-4">Sign in and start tracking your financial journey today!</p>
+        <a href="/signup" className="btn btn-success btn-lg">
           Create Account
         </a>
       </div>

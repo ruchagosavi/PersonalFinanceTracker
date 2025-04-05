@@ -218,7 +218,7 @@ const allScenarios = [
   },
 ];
 
-const BudgetGame = () => {
+const GameForge = () => {
   const [selected, setSelected] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
   const [score, setScore] = useState(0);

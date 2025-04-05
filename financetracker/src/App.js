@@ -73,7 +73,31 @@ const AppContent = () => {
     { amount: 200, category: 'Transport', date: '2025-04-02' },
     { amount: 50, category: 'Food', date: '2025-04-03' },
     { amount: 150, category: 'Entertainment', date: '2025-04-03' },
+  
+    // March 2025
+    { amount: 120, category: 'Food', date: '2025-03-05' },
+    { amount: 80, category: 'Transport', date: '2025-03-10' },
+    { amount: 60, category: 'Utilities', date: '2025-03-12' },
+    { amount: 90, category: 'Entertainment', date: '2025-03-15' },
+  
+    // February 2025
+    { amount: 200, category: 'Food', date: '2025-02-07' },
+    { amount: 110, category: 'Transport', date: '2025-02-11' },
+    { amount: 75, category: 'Utilities', date: '2025-02-20' },
+    { amount: 130, category: 'Shopping', date: '2025-02-25' },
+  
+    // January 2025
+    { amount: 95, category: 'Food', date: '2025-01-03' },
+    { amount: 160, category: 'Transport', date: '2025-01-06' },
+    { amount: 55, category: 'Utilities', date: '2025-01-14' },
+    { amount: 210, category: 'Shopping', date: '2025-01-29' },
+  
+    // April 2025 (continued)
+    { amount: 180, category: 'Utilities', date: '2025-04-04' },
+    { amount: 300, category: 'Shopping', date: '2025-04-05' },
+    { amount: 220, category: 'Food', date: '2025-04-06' },
   ];
+  
 
   return (
     <>
@@ -88,7 +112,7 @@ const AppContent = () => {
         <Route path="/expenses" element={<ViewTrans />} />
         <Route path="/gameforge" element={<GameForge />} />
       </Routes>
-      <Footer />
+  
     </>
   );
 };
