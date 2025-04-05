@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { ThemeContext } from '../ThemeContext';
+import budgeticon from '../pages/budget.png';
 
 import "./Navbar.css";
 
@@ -11,14 +12,18 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'}`}>
       <div className="container-fluid ms-4">
 
-        {/* Brand */}
-        <NavLink className="navbar-brand" to="/">
-          <img
-            src="./RamanujLogo.jpeg"
-            alt="Ramanuj Techno Logo"
-            style={{ height: "60px" }}
-          />
-        </NavLink>
+       {/* Brand */}
+      <NavLink className="navbar-brand d-flex align-items-center" to="/">
+        <img
+          src={budgeticon}
+          alt="WalletWise"
+          style={{ height: "30px" }}
+        />
+        <span className={`ms-2 fw-bold fs-4 ${darkMode ? 'text-light' : 'text-dark'}`}>
+          WalletWise
+        </span>
+      </NavLink>
+
 
         {/* Toggle button */}
         <button
@@ -36,16 +41,16 @@ const Navbar = () => {
         {/* Collapsible content */}
         <div className="collapse navbar-collapse" id="navbarScroll">
           <ul className="navbar-nav ms-auto align-items-center">
-          <li className="nav-item me-5">
-              <NavLink className="nav-link fs-5" to="/gameforge">GameForge</NavLink>
+          
+            <li className="nav-item me-5">
+              <NavLink className="nav-link fs-5" to="/contact">Home</NavLink>
             </li>
             <li className="nav-item me-5">
               <NavLink className="nav-link fs-5" to="/about">About Us</NavLink>
             </li>
             <li className="nav-item me-5">
-              <NavLink className="nav-link fs-5" to="/contact">Contact Us</NavLink>
+              <NavLink className="nav-link fs-5" to="/gameforge">GameForge</NavLink>
             </li>
-
 
             <li className="nav-item dropdown me-5">
               <a
@@ -71,9 +76,9 @@ const Navbar = () => {
               </ul>
             </li>
 
-            <li className="nav-item me-5">
+            {/* <li className="nav-item me-5">
               <NavLink className="nav-link fs-5" to="/signin">Sign In</NavLink>
-            </li>
+            </li> */}
 
             {/* 🌙 Dark Mode Toggle */}
             <li className="nav-item me-4">
