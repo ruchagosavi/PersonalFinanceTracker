@@ -1,0 +1,72 @@
+/* budget.css
+body {
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h1 {
+    color: #1f2937;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    color: #374151;
+  }
+  
+  input[type="number"] {
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2563eb;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+   */
+
+    .nav-pills .nav-link {
+      background-color: #000080;
+      color: white;
+      font-size: 1.2rem;
+      margin-right: 10px;
+      border: 2px solid #000080;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+    }
+
+    .nav-pills .nav-link:hover {
+      background-color: #ffffff;
+      color: #000080;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transform: scale(1.05);
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: #ffffff;
+      color: #000080;
+      font-weight: bold;
+      border-color: #000080;
+    }
