@@ -1,0 +1,20 @@
+/* Custom styles for dropdown items */
+.dropdown-item {
+    background-color: transparent; /* Default background */
+    color: #000; /* Default text color */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover */
+  }
+  
+  /* No background color when active or on hover, and set text color */
+  .dropdown-item.active,
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: transparent !important; /* Prevent background color */
+    color: #000 !important; /* Ensure text color is visible */
+  }
+  
+  /* Optional: Change text color on hover for better visibility */
+  .dropdown-item:hover {
+    color: #007bff; /* Change text color on hover if needed */
+  }
+  
